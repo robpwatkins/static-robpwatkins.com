@@ -83,24 +83,23 @@ hr {
   text-shadow: 2px 2px 3px #252934;
 }
 
-.fab-box {
+.circle-button {
   display: none;
-}
-
-.sticky-wrapper {
-  position: relative;
+  align-items: center;
+  justify-content: center;
   height: 65px;
-  width: 100%;
-  background: hotpink;
+  width: 65px;
+  background: white;
+  border-radius: 50%;
 }
 
-.sticky .sticky-inner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+i {
+  color: #252934;
 }
+
+/* .fab-box {
+  display: none;
+} */
 
 footer {
   width: 100%;
@@ -224,8 +223,12 @@ li:hover {
 }
 
 @media (max-width: 480px) {
-  .fab-box {
+  /* .fab-box {
     display: block;
+  } */
+
+  .circle-button {
+    display: flex;
   }
 
   footer {
