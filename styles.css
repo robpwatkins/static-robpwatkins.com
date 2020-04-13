@@ -96,9 +96,13 @@ hr {
   display: none;
   align-items: center;
   justify-content: center;
-  height: 65px;
-  width: 65px;
-  background: white;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  margin-top: 82vh;
+  box-shadow: 1px 3px 7px #252934;
+  box-shadow: 1px 3px 7px #252934a2;
+  background: rgb(235, 235, 235);
   border-radius: 50%;
 }
 
@@ -168,10 +172,6 @@ li:hover {
   border-bottom: 5px solid #252934e5;
 } */
 
-.about-container {
-  color: #252934;
-  padding-top: 75px;
-}
 
 header {
   display: none;
@@ -181,11 +181,6 @@ header {
   top: 0;
   background: white;
   box-shadow: 2px 2px 3px #252934;
-  transition: all 250ms ease-in-out;
-}
-
-.is-visible {
-  display: block;
   transition: all 250ms ease-in-out;
 }
 
@@ -208,12 +203,17 @@ header ul {
   /* padding: 0; */
 }
 
+.about-content {
+  color: #252934;
+  padding: 175px 50px;
+}
+
 @media (max-width: 800px) {
   ul {
-    font-size: 18px;
+    font-size: 20px;
     padding-inline-start: 20px;
   }
-
+  
   .contact:hover {
     margin-left: -6px;
   }
@@ -228,6 +228,11 @@ header ul {
   
   .home:hover {
     margin-left: -1.5px;
+  }
+
+  header ul {
+    font-size: 20px;
+    padding-inline-start: 20px;
   }
 }
 
@@ -260,6 +265,10 @@ header ul {
   .home:hover {
     margin-left: -1px;
   }
+
+  header ul {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -277,5 +286,11 @@ header ul {
 
   .nav-bar {
     display: none;
+  }
+
+  header {
+    display: none;
+    height: 0;
+    position: unset;
   }
 }
