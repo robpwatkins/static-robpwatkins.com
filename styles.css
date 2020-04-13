@@ -208,6 +208,14 @@ header ul {
   padding: 175px 50px;
 }
 
+.portfolio-content {
+  padding: 175px 50px;
+}
+
+.contact-content {
+  padding: 175px 50px;
+}
+
 @media (max-width: 800px) {
   ul {
     font-size: 20px;
