@@ -66,7 +66,6 @@ ob.observe(footer);
 let prevScrollPos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
-  console.log(currentScrollPos);
   if (prevScrollPos > currentScrollPos) {
     header.style.top = "0"
   } else {
