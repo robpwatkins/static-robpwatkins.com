@@ -62,3 +62,15 @@ function obCallBack(payload) {
 const ob = new IntersectionObserver(obCallBack);
 
 ob.observe(footer);
+
+let prevScrollPos = window.pageYOffset;
+window.onscroll = () => {
+  let currentScrollPos = window.pageYOffset;
+  console.log(currentScrollPos);
+  if (prevScrollPos > currentScrollPos) {
+    header.style.top = "0"
+  } else {
+    header.style.top = "-50px"
+  }
+  prevScrollPos = currentScrollPos;
+}
