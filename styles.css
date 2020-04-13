@@ -118,10 +118,6 @@ footer {
   /* border-bottom: 2px solid white; */
 }
 
-.nav-hr {
-  position: relative;
-}
-
 .nav-bar {
   display: flex;
   height: 65px;
@@ -175,6 +171,41 @@ li:hover {
 .about-container {
   color: #252934;
   padding-top: 75px;
+}
+
+header {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 2px 2px 3px #252934;
+  transition: all 250ms ease-in-out;
+}
+
+.is-visible {
+  display: block;
+  transition: all 250ms ease-in-out;
+}
+
+header .nav-bar {
+  width: 60%;
+  height: 55px;
+}
+
+.header-bar {
+  width: 100%;
+  margin: 0;
+  box-shadow: none;
+  /* border-top: 3px solid #252934; */
+}
+
+header ul {
+  height: 55px;
+  line-height: 55px;
+  font-size: 25px;
+  /* padding: 0; */
 }
 
 @media (max-width: 800px) {
