@@ -34,15 +34,24 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   background: #25293496;
-  box-shadow: inset 0px 0px 10px black;
+  box-shadow: inset 0px 0px 10px #252934;
 }
 
 .tippy-top {
   width: 100%;
   margin: 0;
   border-top: 3px solid white;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px #252934;
 
+}
+
+.stickThis {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  color: #252934;
+  background: white;
 }
 
 .top-bar {

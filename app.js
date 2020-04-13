@@ -1,11 +1,18 @@
-// function buttonClicked () {
-//   document.querySelector('.titleBox').classList.add('titleBoxTab');
-//   document.querySelector('.first').classList.add('firstTab');
-//   document.querySelector('.webDev').classList.add('webDevTab');
-//   document.querySelector('.webby').classList.add('webbyTab');
-//   document.querySelector('.tabs').classList.add('tabsTab');
-//   document.querySelector('button').classList.add('buttonTab');
-//   document.querySelector('[aria-labelledby="about"]').hidden = false;
+// function stickToTheTop() {
+//   const window_top = window.scrollTo(0, 0);
+//   const stickHere = document.querySelector('.stick-here');
+//   // const top = stickHere.offset().top;
+//   const stickThis = document.querySelector('.stickThis');
+//   if (window_top > top) {
+//     stickThis.classList.add('stick');
+//   } else {
+//     stickThis.classList.remove('stick');
+//   }
 // }
 
-// document.querySelectorAll('button').forEach(button => button.addEventListener('click', buttonClicked));
+// const theGuy = () => {
+//   window.scroll(stickToTheTop);
+//   stickToTheTop();
+// }
+
+// theGuy();
