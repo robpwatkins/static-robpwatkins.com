@@ -40,13 +40,13 @@ const ob = new IntersectionObserver(obCallBack);
 
 ob.observe(footerBar);
 
-// let prevScrollPos = window.pageYOffset;
-// window.onscroll = () => {
-//   let currentScrollPos = window.pageYOffset;
-//   if (prevScrollPos > currentScrollPos) {
-//     footer.style.top = "0"
-//   } else {
-//     footer.style.top = "-50px"
-//   }
-//   prevScrollPos = currentScrollPos;
-// }
+let prevScrollPos = window.pageYOffset;
+window.onscroll = () => {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    footer.style.top = "0"
+  } else {
+    footer.style.top = "-63px"
+  }
+  prevScrollPos = currentScrollPos;
+}

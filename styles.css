@@ -135,7 +135,7 @@ footer {
   color: #252934;
   background: white;
   transition: all 250ms ease-in-out;
-  /* border-bottom: 2px solid white; */
+  box-shadow: 2px 2px 3px #252934;
 }
 
 .nav-bar {
