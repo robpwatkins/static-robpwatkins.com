@@ -1,5 +1,4 @@
-const footer = document.querySelector('footer');
-const header = document.querySelector('header');
+const nav = document.querySelector('nav');
 const circleButton = document.querySelector('.circle-button');
 const homeContent = document.querySelector('.tippy-top');
 const aboutContent = document.querySelector('.about-content');
@@ -10,8 +9,10 @@ const home = document.querySelector('.home');
 const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
 const contact = document.querySelector('.contact');
-const footerBar = document.querySelector('.footer-bar');
+const bottomBar = document.querySelector('.bottom-bar');
 const aboutBar = document.querySelector('.about-bar');
+const xsNav = document.querySelector('.xs-nav');
+const xsUl = document.querySelector('.xs-ul');
 
 home.addEventListener('click', () => {
   homeContent.scrollIntoView();
@@ -31,16 +32,16 @@ contact.addEventListener('click', () => {
 
 function obCallBack(payload) {
   if (!payload[0].isIntersecting) {
-    footer.style.position = "fixed";
-    footer.style.top = "0";
+    nav.style.position = "fixed";
+    nav.style.top = "0";
   } else {
-    footer.style.position = "unset";
+    nav.style.position = "unset";
   }
 }
 
 const ob = new IntersectionObserver(obCallBack);
 
-ob.observe(footerBar);
+ob.observe(bottomBar);
 
 function obAboutCallBack(payload) {
   const aboutBarHeight = payload[0].rootBounds.height;
@@ -54,9 +55,9 @@ function obAboutCallBack(payload) {
         return;
       } else
       if (prevScrollPos > currentScrollPos) {
-        footer.style.top = "0"
+        nav.style.top = "0"
       } else {
-        footer.style.top = "-59px"
+        nav.style.top = "-59px"
       }
       prevScrollPos = currentScrollPos;
     }
@@ -66,3 +67,8 @@ function obAboutCallBack(payload) {
 const obAbout = new IntersectionObserver(obAboutCallBack);
 
 obAbout.observe(aboutBar);
+
+circleButton.addEventListener('click', () => {
+  xsNav.classList.add('xs-nav-visible');
+  xsUl.classList.add('xs-ul-visible');
+});
