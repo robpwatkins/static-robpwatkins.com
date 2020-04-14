@@ -226,7 +226,14 @@ header ul {
 
 .about-content {
   color: #252934;
-  padding: 175px 50px;
+  padding: 100px 50px;
+}
+
+.about-bar {
+  width: 100%;
+  margin: 0;
+  border: 1px solid white;
+  box-shadow: none;
 }
 
 .portfolio-content {

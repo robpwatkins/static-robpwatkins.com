@@ -10,6 +10,7 @@ const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
 const contact = document.querySelector('.contact');
 const footerBar = document.querySelector('.footer-bar');
+const aboutBar = document.querySelector('.about-bar');
 
 home.addEventListener('click', () => {
   homeContent.scrollIntoView();
@@ -33,6 +34,7 @@ function obCallBack(payload) {
     footer.style.top = "0";
   } else {
     footer.style.position = "unset";
+    aboutBar.style.display = "block";
   }
 }
 
@@ -40,13 +42,28 @@ const ob = new IntersectionObserver(obCallBack);
 
 ob.observe(footerBar);
 
-let prevScrollPos = window.pageYOffset;
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    footer.style.top = "0"
+function obAboutCallBack(payload) {
+  const aboutBarHeight = payload[0].rootBounds.height;
+  if (payload[0].isIntersecting) {  
+    return;
   } else {
-    footer.style.top = "-63px"
+    aboutBar.style.display = "none";
+    let prevScrollPos = window.pageYOffset;
+    window.onscroll = () => {
+      let currentScrollPos = window.pageYOffset;
+      if (currentScrollPos < aboutBarHeight) {
+        return;
+      } else
+      if (prevScrollPos > currentScrollPos) {
+        footer.style.top = "0"
+      } else {
+        footer.style.top = "-63px"
+      }
+      prevScrollPos = currentScrollPos;
+    }
   }
-  prevScrollPos = currentScrollPos;
 }
+
+const obAbout = new IntersectionObserver(obAboutCallBack);
+
+obAbout.observe(aboutBar);
