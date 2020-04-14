@@ -114,11 +114,27 @@ i {
   display: none;
 } */
 
+
+.bar-footer-box {
+  width: 100%;
+  height: 65px;
+  color: #252934;
+  background: white;
+}
+
+.footer-bar {
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid white;
+  box-shadow: none;
+}
+
 footer {
   width: 100%;
   height: 65px;
   color: #252934;
   background: white;
+  transition: all 250ms ease-in-out;
   /* border-bottom: 2px solid white; */
 }
 
@@ -127,6 +143,11 @@ footer {
   height: 65px;
   width: 60%;
   align-items: center;
+}
+
+.bottom-bar {
+  margin: 0;
+  width: 100%;
 }
 
 ul {

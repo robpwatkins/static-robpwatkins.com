@@ -5,14 +5,15 @@ const homeContent = document.querySelector('.tippy-top');
 const aboutContent = document.querySelector('.about-content');
 const portfolioContent = document.querySelector('.portfolio-content');
 const contactContent = document.querySelector('.contact-content');
+const home = document.querySelector('.home');
 const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
 const contact = document.querySelector('.contact');
-const headerHome = document.querySelector('header .home');
-const headerAbout = document.querySelector('header .about');
-const headerPortfolio = document.querySelector('header .portfolio');
-const headerContact = document.querySelector('header .contact');
+const footerBar = document.querySelector('.footer-bar');
 
+home.addEventListener('click', () => {
+  homeContent.scrollIntoView();
+})
 
 about.addEventListener('click', () => {
   aboutContent.scrollIntoView();
@@ -26,50 +27,26 @@ contact.addEventListener('click', () => {
   contactContent.scrollIntoView();
 })
 
-headerHome.addEventListener('click', () => {
-  homeContent.scrollIntoView();
-})
-
-headerAbout.addEventListener('click', () => {
-  aboutContent.scrollIntoView();
-})
-
-headerPortfolio.addEventListener('click', () => {
-  portfolioContent.scrollIntoView();
-})
-
-headerContact.addEventListener('click', () => {
-  contactContent.scrollIntoView();
-})
-
 function obCallBack(payload) {
   if (!payload[0].isIntersecting) {
-    function getHeight() {
-      header.style.display = 'block';
-      const height = header.scrollHeight + 'px';
-      header.style.display = '';
-      return height;
-    }
-    const height = getHeight();
-    header.style.display = "block";
-    header.style.height = height;
+    footer.style.position = "fixed";
+    footer.style.top = "0";
   } else {
-    header.style.display = "none";
-    header.style.height = "0"
+    footer.style.position = "unset";
   }
 }
 
 const ob = new IntersectionObserver(obCallBack);
 
-ob.observe(footer);
+ob.observe(footerBar);
 
-let prevScrollPos = window.pageYOffset;
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    header.style.top = "0"
-  } else {
-    header.style.top = "-50px"
-  }
-  prevScrollPos = currentScrollPos;
-}
+// let prevScrollPos = window.pageYOffset;
+// window.onscroll = () => {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollPos > currentScrollPos) {
+//     footer.style.top = "0"
+//   } else {
+//     footer.style.top = "-50px"
+//   }
+//   prevScrollPos = currentScrollPos;
+// }
