@@ -118,10 +118,6 @@ i {
   color: #252934;
 }
 
-/* .fab-box {
-  display: none;
-} */
-
 .xs-bar-footer-box {
   display: none;
 }
@@ -154,7 +150,6 @@ footer {
 
 .nav-bar {
   display: flex;
-  height: 65px;
   width: 60%;
   align-items: center;
 }
@@ -209,7 +204,7 @@ li:hover {
 
 .about-content {
   color: #252934;
-  padding: 100px 50px;
+  padding: 100px 50px 0 50px;
 }
 
 .about-bar {
@@ -219,12 +214,63 @@ li:hover {
   box-shadow: none;
 }
 
+.portfolio-heading {
+  padding: 100px 0 0 50px;
+}
+
 .portfolio-content {
-  padding: 175px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.projects {
+  display: flex;
+  width: 90vw;
+  height: 75vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #252934;
+}
+
+.project {
+  height: 35vh;
+  width: 25vw;
+  border: 1px solid #252934;
+}
+
+.contact-heading {
+  padding-left: 50px;
 }
 
 .contact-content {
-  padding: 175px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-name {
+  height: 50px;
+  width: 90vw;
+  border: 1px solid #252934;
+}
+
+.form-email {
+  height: 50px;
+  width: 90vw;
+  margin: 35px 0;
+  border: 1px solid #252934;
+}
+
+.form-message {
+  height: 250px;
+  width: 90vw;
+  margin: 35px 0;
+  border: 1px solid #252934;
 }
 
 @media (max-width: 800px) {

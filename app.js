@@ -3,7 +3,8 @@ const header = document.querySelector('header');
 const circleButton = document.querySelector('.circle-button');
 const homeContent = document.querySelector('.tippy-top');
 const aboutContent = document.querySelector('.about-content');
-const portfolioContent = document.querySelector('.portfolio-content');
+// note below: portfolioContent might need to change
+const portfolioContent = document.querySelector('.portfolio-heading');
 const contactContent = document.querySelector('.contact-content');
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
