@@ -34,7 +34,6 @@ function obCallBack(payload) {
     footer.style.top = "0";
   } else {
     footer.style.position = "unset";
-    aboutBar.style.display = "block";
   }
 }
 
@@ -47,7 +46,6 @@ function obAboutCallBack(payload) {
   if (payload[0].isIntersecting) {  
     return;
   } else {
-    aboutBar.style.display = "none";
     let prevScrollPos = window.pageYOffset;
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset;

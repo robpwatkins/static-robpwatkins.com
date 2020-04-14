@@ -99,7 +99,7 @@ hr {
   height: 60px;
   width: 60px;
   position: fixed;
-  margin-top: 82vh;
+  margin-top: 75vh;
   box-shadow: 1px 3px 7px #252934;
   box-shadow: 1px 3px 7px #252934a2;
   background: rgb(235, 235, 235);
@@ -114,6 +114,9 @@ i {
   display: none;
 } */
 
+.xs-bar-footer-box {
+  display: none;
+}
 
 .bar-footer-box {
   width: 100%;
@@ -308,12 +311,27 @@ header ul {
 }
 
 @media (max-width: 480px) {
-  /* .fab-box {
-    display: block;
-  } */
-
-  .circle-button {
+.circle-button {
     display: flex;
+  }
+
+  .xs-bar-footer-box {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .xs-bar {
+    width: 100%;
+    margin: 0;
+    border-top: 3px solid white;
+    box-shadow: none;
+  }
+
+  .bar-footer-box {
+    display: none;
   }
 
   footer {
