@@ -13,6 +13,7 @@ const bottomBar = document.querySelector('.bottom-bar');
 const aboutBar = document.querySelector('.about-bar');
 const xsNav = document.querySelector('.xs-nav');
 const xsUl = document.querySelector('.xs-ul');
+const add = document.querySelector('.add');
 
 home.addEventListener('click', () => {
   homeContent.scrollIntoView();
@@ -68,7 +69,11 @@ const obAbout = new IntersectionObserver(obAboutCallBack);
 
 obAbout.observe(aboutBar);
 
-circleButton.addEventListener('click', () => {
-  xsNav.classList.add('xs-nav-visible');
-  xsUl.classList.add('xs-ul-visible');
-});
+circleButton.addEventListener('click', circleButtonClick);
+
+function circleButtonClick() {
+  xsNav.classList.toggle('xs-nav-visible');
+  xsUl.classList.toggle('xs-ul-visible');
+  add.classList.toggle('add-nav-open');
+
+}
