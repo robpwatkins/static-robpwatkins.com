@@ -55,7 +55,7 @@ function obAboutCallBack(payload) {
       if (prevScrollPos > currentScrollPos) {
         footer.style.top = "0"
       } else {
-        footer.style.top = "-63px"
+        footer.style.top = "-59px"
       }
       prevScrollPos = currentScrollPos;
     }

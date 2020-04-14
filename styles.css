@@ -1,6 +1,11 @@
-body, html {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body, html {
+  width: 100vw;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -8,7 +13,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+hr {
+  border: 0;
+}
+
 .homepage-container {
+  position: relative;
   height: 100vh;
   color: white;
   border: 3px solid white;
@@ -54,10 +64,6 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
 }
 
-.top-bar {
-  margin: 45px 0 -10px 0;
-}
-
 .title-box {
   display: flex;
   height: 400px;
@@ -80,8 +86,9 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 3px 2px 3px#252934;
 }
 
-hr {
+.web-dev-bar {
   width: 45%;
+  margin: 12.5px 0;
   border: 0;
   border-top: 2px solid white;
   box-shadow: 2px 2px 3px #252934;
@@ -133,12 +140,15 @@ i {
 }
 
 footer {
-  width: 100%;
+  position: absolute;
+  width: 100vw;
   height: 65px;
+  margin-left: -3px;
   color: #252934;
   background: white;
   transition: all 250ms ease-in-out;
-  box-shadow: 2px 2px 3px #252934;
+  box-shadow: 0px 10px 10px -10px #252934;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -196,37 +206,6 @@ li:hover {
   border-bottom: 5px solid #252934e5;
 } */
 
-
-header {
-  display: none;
-  height: 0px;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  background: white;
-  box-shadow: 2px 2px 3px #252934;
-  transition: all 250ms ease-in-out;
-}
-
-header .nav-bar {
-  width: 60%;
-  height: 55px;
-}
-
-.header-bar {
-  width: 100%;
-  margin: 0;
-  box-shadow: none;
-  /* border-top: 3px solid #252934; */
-}
-
-header ul {
-  height: 55px;
-  line-height: 55px;
-  font-size: 25px;
-  /* padding: 0; */
-}
-
 .about-content {
   color: #252934;
   padding: 100px 50px;
@@ -268,11 +247,6 @@ header ul {
   .home:hover {
     margin-left: -1.5px;
   }
-
-  header ul {
-    font-size: 20px;
-    padding-inline-start: 20px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -303,10 +277,6 @@ header ul {
   
   .home:hover {
     margin-left: -1px;
-  }
-
-  header ul {
-    font-size: 15px;
   }
 }
 
@@ -340,11 +310,5 @@ header ul {
 
   .nav-bar {
     display: none;
-  }
-
-  header {
-    display: none;
-    height: 0;
-    position: unset;
   }
 }
