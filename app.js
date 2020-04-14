@@ -75,5 +75,6 @@ function circleButtonClick() {
   xsNav.classList.toggle('xs-nav-visible');
   xsUl.classList.toggle('xs-ul-visible');
   add.classList.toggle('add-nav-open');
+  document.body.classList.toggle('xs-body-lock');
 
 }
