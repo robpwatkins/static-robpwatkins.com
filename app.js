@@ -14,6 +14,10 @@ const aboutBar = document.querySelector('.about-bar');
 const xsNav = document.querySelector('.xs-nav');
 const xsUl = document.querySelector('.xs-ul');
 const add = document.querySelector('.add');
+const xsHome = document.querySelector('.xs-home');
+const xsAbout = document.querySelector('.xs-about');
+const xsPortfolio = document.querySelector('.xs-Portfolio');
+const xsContact = document.querySelector('.xs-Contact');
 
 home.addEventListener('click', () => {
   homeContent.scrollIntoView();
