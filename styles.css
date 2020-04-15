@@ -282,6 +282,7 @@ li:hover {
   border: 1px solid #252934;
   width: 33.33%;
   height: 100%;
+  padding: 15px;
 }
 
 .portfolio-heading {
