@@ -225,8 +225,8 @@ li:hover {
 
 .about-content {
   color: #252934;
-  padding: 100px 50px 0 50px;
 }
+
 .about-bar {
   width: 100%;
   margin: 0;
@@ -235,14 +235,26 @@ li:hover {
 }
 
 .about-container {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
   color: white;
   background: #252934;
 }
 
-.mountain-man {
-  height: 50vh;
+.mountain-man-box {
+  padding-top: 75px;
+  height: 90vh;
+  width: 100vw;
+  background-image: url(./MaintainManCroppedMore.jpg);
+  background-size: cover;
 }
 
+.mountain-man-overlay {
+  height: 100%;
+  width: 100%;
+  background: #25293462;
+}
 
 .portfolio-heading {
   padding: 100px 0 0 50px;
