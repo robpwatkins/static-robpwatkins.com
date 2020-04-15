@@ -294,6 +294,37 @@ li:hover {
   box-shadow: 2px 2px 5px #252934;
 }
 
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.right-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 9%;
+  color: white;
+  background: rgba(255, 255, 255, 0.397);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #252934;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  padding-left: 5px;
+  background: #252934;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .middle-box {
   font-size: 14px;
 }
