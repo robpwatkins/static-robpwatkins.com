@@ -323,9 +323,24 @@ li:hover {
 }
 
 .center-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .profile-pic {
+  border: 3px solid #252934;
+  border-radius: 5px;
+} */
+
+.profile-pic img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.center-card {
   font-size: 15px;
   padding: 13px;
-  background: rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 2px 2px 5px #252934;
 }
