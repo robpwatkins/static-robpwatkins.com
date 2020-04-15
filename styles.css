@@ -238,8 +238,8 @@ li:hover {
 
 .about-container {
   /* text-align: center; */
-  /* position: fixed; */
-  /* top: 0; */
+  position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   padding: 35px 0 0 45px;
@@ -258,10 +258,15 @@ li:hover {
   font-size: 75px;
 }
 
+.about-underline {
+  width: 75%;
+  border-top: 3px solid #252934;
+}
+
 .about-box {
   width: 90vw;
   height: 75vh;
-  border: 3px solid #252934;
+  /* border: 3px solid #252934; */
 }
 
 .img-box {
@@ -281,8 +286,8 @@ li:hover {
   height: 100%;
   padding: 5px 18px;
   /* background: rgba(255, 255, 255, 0.288); */
-  background: #2529347e;
-  box-shadow: inset 0px 0px 10px #252934;
+  /* background: #2529347e; */
+  /* box-shadow: inset 0px 0px 10px #252934; */
 }
 
 .about-card-box {
@@ -297,21 +302,28 @@ li:hover {
 }
 
 .left-card {
-  height: 22%;
+  height: 12%;
   width: 100%;
+  /* text-align: center; */
   /* border-radius: 5px; */
   /* box-shadow: 2px 2px 5px #252934; */
 }
 
 .left-card p {
-  font-size: 21px;
+  font-size: 23px;
   /* font-weight: bold; */
-  color: white;
-  text-shadow: 3px 2px 3px #252934;
+  color: #252934;
+  /* text-shadow: 3px 2px 3px #252934; */
+}
+
+.left-card hr {
+  width: 65%;
+  margin: 10px 0;
+  border-top: 3px solid #252934;
 }
 
 .center-box {
-  font-size: 14px;
+  font-size: 15px;
   padding: 13px;
   background: rgb(255, 255, 255);
   border-radius: 5px;
