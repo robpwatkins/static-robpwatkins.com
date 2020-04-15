@@ -225,6 +225,8 @@ li:hover {
 
 .about-content {
   color: #252934;
+  position: fixed;
+  top: 0;
 }
 
 .about-bar {
@@ -272,17 +274,28 @@ li:hover {
 .img-overlay {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.288);
+  padding: 5px 18px;
+  /* background: rgba(255, 255, 255, 0.288); */
+  /* background: #25293448; */
   box-shadow: inset 0px 0px 10px #252934;
 }
 
-.left-box, .center-box, .right-box {
-  border: 1px solid #252934;
-  width: 33.33%;
-  height: 100%;
-  padding: 15px;
+.about-card {
+  /* border: 1px solid #252934; */
+  width: 32%;
+  height: 95%;
+  /* margin: 5px; */
+  padding: 13px;
+  background: rgba(255, 255, 255, 0.397);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #252934;
+}
+
+.middle-box {
+  font-size: 14px;
 }
 
 .portfolio-heading {
