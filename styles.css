@@ -236,14 +236,14 @@ li:hover {
 
 .about-container {
   /* text-align: center; */
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100vw;
   height: 100vh;
-  padding: 25px 0 0 45px;
+  padding: 35px 0 0 45px;
   color: #252934;
   background: white;
-  border: 3px solid #252934;
+  /* border: 3px solid #252934; */
   /* box-shadow: inset 0px 0px 10px #252934; */
 }
 
@@ -270,10 +270,18 @@ li:hover {
 }
 
 .img-overlay {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.288);
   box-shadow: inset 0px 0px 10px #252934;
+}
+
+.left-box, .center-box, .right-box {
+  border: 1px solid #252934;
+  width: 33.33%;
+  height: 100%;
 }
 
 .portfolio-heading {
