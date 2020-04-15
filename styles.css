@@ -227,13 +227,22 @@ li:hover {
   color: #252934;
   padding: 100px 50px 0 50px;
 }
-
 .about-bar {
   width: 100%;
   margin: 0;
   border: 1px solid white;
   box-shadow: none;
 }
+
+.about-container {
+  color: white;
+  background: #252934;
+}
+
+.mountain-man {
+  height: 50vh;
+}
+
 
 .portfolio-heading {
   padding: 100px 0 0 50px;
