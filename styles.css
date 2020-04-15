@@ -267,10 +267,10 @@ li:hover {
 .img-box {
   width: 100%;
   height: 100%;
-  background-image: url('./BackgroundFirstTry.JPG');
+  /* background-image: url('./BackgroundFirstTry.JPG');
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
 }
 
 .img-overlay {
@@ -281,7 +281,7 @@ li:hover {
   height: 100%;
   padding: 5px 18px;
   /* background: rgba(255, 255, 255, 0.288); */
-  background: #25293448;
+  background: #2529347e;
   box-shadow: inset 0px 0px 10px #252934;
 }
 
@@ -293,20 +293,27 @@ li:hover {
 .left-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .left-card {
-  height: 32%;
+  height: 22%;
   width: 100%;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #252934;
+  /* border-radius: 5px; */
+  /* box-shadow: 2px 2px 5px #252934; */
+}
+
+.left-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 2px 3px #252934;
 }
 
 .center-box {
   font-size: 14px;
   padding: 13px;
-  background: rgba(255, 255, 255, 0.397);
+  background: rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 2px 2px 5px #252934;
 }
@@ -323,7 +330,7 @@ li:hover {
   width: 100%;
   height: 9%;
   color: white;
-  background: rgba(255, 255, 255, 0.397);
+  background: rgba(255, 255, 255, 0.678);
   border-radius: 5px;
   box-shadow: 2px 2px 5px #252934;
 }
@@ -334,7 +341,7 @@ li:hover {
   height: 100%;
   width: 90%;
   padding-left: 5px;
-  background: #252934ef;
+  background: #252934;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
