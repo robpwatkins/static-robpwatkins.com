@@ -10,6 +10,15 @@ body, html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary: #385170;
+  --secondary: #51eaea;
+  --background: #fbe555;
+  --orange: #fb9224;
+  --shadow: #252934;
+  --darkwhite: #ececec;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -44,7 +53,7 @@ hr {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  background: #25293496;
+  /* background: #25293496; */
   background: #25293477;
   box-shadow: inset 0px 0px 10px #252934;
 }
@@ -54,16 +63,8 @@ hr {
   margin: 0;
   border-top: 3px solid white;
   box-shadow: 0px 0px 10px #252934;
+  box-shadow: 0px 0px 10px var(--shadow);
 
-}
-
-.stickThis {
-  position: sticky;
-  top: 0;
-  text-align: center;
-  width: 100%;
-  color: #252934;
-  background: white;
 }
 
 .title-box {
@@ -80,12 +81,14 @@ hr {
   font-size: 195px;
   font-weight: 900;
   text-shadow: 3px 2px 3px #252934;
+  text-shadow: 3px 2px 3px var(--shadow);
 }
 
 .last-name {
   font-size: 90px;
   font-weight: 900;
   text-shadow: 3px 2px 3px#252934;
+  text-shadow: 3px 2px 3px var(--shadow);
 }
 
 .web-dev-bar {
@@ -94,11 +97,13 @@ hr {
   border: 0;
   border-top: 2px solid white;
   box-shadow: 2px 2px 3px #252934;
+  box-shadow: 2px 2px 3px var(--shadow);
 }
 
 .web-dev {
   font-size: 35px;
   text-shadow: 2px 2px 3px #252934;
+  text-shadow: 3px 2px 3px var(--shadow);
 }
 
 .circle-button {
@@ -125,7 +130,7 @@ hr {
 }
 
 i {
-  color: #252934;
+  color: var(--primary);
 }
 
 .xs-bar-footer-box {
@@ -135,7 +140,7 @@ i {
 .bar-nav-box {
   width: 100%;
   height: 65px;
-  color: #252934;
+  /* color: #252934; */
   background: white;
 }
 
@@ -151,7 +156,7 @@ nav {
   width: 100vw;
   height: 65px;
   margin-left: -3px;
-  color: #252934;
+  color: var(--primary);
   background: white;
   transition: all 250ms ease-in-out;
   box-shadow: 0px 10px 10px -10px #252934;
@@ -191,7 +196,7 @@ li {
 
 li:hover {
   font-weight: bold;
-  color: #252934e5;
+  /* color: #252934e5; */
 }
 
 .contact:hover {
@@ -224,26 +229,26 @@ li:hover {
 }
 
 .about-content {
-  color: #252934;
-  /* position: fixed; */
-  /* top: 0; */
+  color: var(--primary);
+  position: fixed;
+  top: 0;
 }
 
 .about-bar {
   width: 100%;
   margin: 0;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-shadow: none;
 }
 
 .about-container {
   /* text-align: center; */
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   width: 100vw;
   height: 100vh;
   padding: 35px 0 0 45px;
-  color: #252934;
+  color: var(--primary);
   background: white;
   /* border: 3px solid #252934; */
   /* box-shadow: inset 0px 0px 10px #252934; */
@@ -260,7 +265,7 @@ li:hover {
 
 .about-underline {
   width: 75%;
-  border-top: 3px solid #252934;
+  border-top: 3px solid var(--secondary);
 }
 
 .about-box {
@@ -312,14 +317,14 @@ li:hover {
 .left-card p {
   font-size: 23px;
   /* font-weight: bold; */
-  color: #252934;
+  /* color: #252934; */
   /* text-shadow: 3px 2px 3px #252934; */
 }
 
 .left-card hr {
   width: 65%;
   margin: 10px 0;
-  border-top: 3px solid #252934;
+  border-top: 3px solid var(--secondary);
 }
 
 .center-box {
@@ -341,8 +346,9 @@ li:hover {
 .center-card {
   font-size: 15px;
   padding: 13px;
+  background: white;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px #252934;
+  box-shadow: 2px 2px 5px var(--shadow);
 }
 
 .right-box {
@@ -355,26 +361,34 @@ li:hover {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 9%;
+  height: 7%;
   color: white;
-  background: rgba(255, 255, 255, 0.678);
+  background: white;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px #252934;
+  box-shadow: 2px 2px 5px var(--shadow);
 }
 
 .skill {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   height: 100%;
-  width: 90%;
+  width: 80%;
   padding-left: 5px;
-  background: #252934;
+  background: var(--orange);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-.middle-box {
-  font-size: 14px;
+.what {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  align-items: center;
+  background: var(--orange);
 }
 
 .portfolio-heading {
