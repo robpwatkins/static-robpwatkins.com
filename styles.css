@@ -13,10 +13,10 @@ body, html {
 :root {
   --primary: #686D77;
   --primary: rgb(71, 75, 83);
-  --secondary: #B6D6F2;
+  --secondary: rgb(1, 162, 255);
   --background: #fbe555;
   --overlay: #25293477;
-  --orange: #F5B4A0;
+  --orange: #e40078;
   --shadow: rgb(57, 67, 77);
   --darkwhite: #ececec;
 }
