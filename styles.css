@@ -77,11 +77,22 @@ hr {
 }
 
 .first-name {
+  position: relative;
   height: 190px;
   font-size: 195px;
   font-weight: 900;
   text-shadow: 3px 2px 3px #252934;
   text-shadow: 3px 2px 3px var(--shadow);
+}
+
+.first-name-face {
+  position: absolute;
+  margin: 29px 2;
+  z-index: 1;
+}
+
+.first-name-face img {
+  width: 115px;
 }
 
 .last-name {
@@ -152,7 +163,7 @@ i {
 }
 
 nav {
-  position: absolute;
+  /* position: absolute; */
   width: 100vw;
   height: 65px;
   margin-left: -3px;
