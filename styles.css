@@ -17,6 +17,7 @@ body, html {
   --background: #fbe555;
   --overlay: #25293477;
   --overlay2: #25293427;
+  --overlay3: #25293411;
   --orange: #e40078;
   --shadow: rgb(57, 67, 77);
   --darkwhite: #ececec;
@@ -45,7 +46,7 @@ hr {
   background-image: url(./BackgroundFirstTry2.JPG);
   background-size: cover;
   font-size: 25px;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
 }
 
@@ -56,7 +57,7 @@ hr {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  /* background: var(--overlay); */
+  background: var(--overlay2);
   box-shadow: inset 0px 0px 10px var(--shadow);
 }
 
@@ -263,10 +264,10 @@ li:hover {
   /* width: 100%; */
   height: 100%;
   background-image: url(./MountainManCroppedTHEHEIGHTENING.jpg);
-  background-image: url(./PotentialPic2.jpg);
-  background-size: contain;
-  background-position: bottom left -115px;
-  background-attachment: fixed;
+  /* background-image: url(./MountainManCroppedTHEHEIGHTENING.jpg); */
+  background-size: cover;
+  background-position: bottom left -65px;
+  /* background-attachment: fixed; */
   border: 3px solid white;
   box-shadow: inset 0px 0px 10px var(--shadow);
 }
@@ -274,13 +275,13 @@ li:hover {
 .test-img-overlay {
   height: 100%;
   width: 100%;
-  /* background: var(--overlay2); */
+  background: var(--overlay3);
 }
 
 .test-background {
   height: 100vh;
   width: 100%;
-  padding-left: 300px;
+  /* padding-left: 300px; */
   background: white;
 }
 
