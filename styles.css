@@ -16,6 +16,7 @@ body, html {
   --secondary: rgb(1, 162, 255);
   --background: #fbe555;
   --overlay: #25293477;
+  --overlay2: #25293433;
   --orange: #e40078;
   --shadow: rgb(57, 67, 77);
   --darkwhite: #ececec;
@@ -34,8 +35,8 @@ hr {
   height: 100vh;
   color: white;
   border: 3px solid white;
-  border-bottom: none;
-  border-top: none;
+  /* border-bottom: none; */
+  /* border-top: none; */
 }
 
 .container {
@@ -55,14 +56,14 @@ hr {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  background: #25293477;
+  background: var(--overlay);
   box-shadow: inset 0px 0px 10px var(--shadow);
 }
 
 .tippy-top {
   width: 100%;
   margin: 0;
-  border-top: 3px solid white;
+  /* border-top: 3px solid white; */
   box-shadow: 0px 0px 10px #252934;
   box-shadow: 0px 0px 10px var(--shadow);
 
@@ -243,6 +244,30 @@ li:hover {
 
 .xs-nav {
   display: none;
+}
+
+.test-content {
+  height: 100vh;
+  width: 100vw;
+}
+
+.test-content {
+  padding: 125px 45px 45px 45px;
+}
+
+.test-background {
+  height: 95%;
+  width: 100%;
+  background-image: url(./MaintainManCropped.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.test-overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--overlay2);
+  box-shadow: inset 0px 0px 10px var(--shadow);
 }
 
 .about-content {
