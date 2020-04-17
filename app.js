@@ -18,41 +18,49 @@ const xsHome = document.querySelector('.xs-home');
 const xsAbout = document.querySelector('.xs-about');
 const xsPortfolio = document.querySelector('.xs-Portfolio');
 const xsContact = document.querySelector('.xs-Contact');
+const sideBar = document.querySelector('.side-bar');
+const testBackground = document.querySelector('.test-background');
 
-home.addEventListener('click', () => {
-  homeContent.scrollIntoView();
-})
+// home.addEventListener('click', () => {
+//   homeContent.scrollIntoView();
+// })
 
-about.addEventListener('click', () => {
-  aboutContent.scrollIntoView();
-})
+// about.addEventListener('click', () => {
+//   aboutContent.scrollIntoView();
+// })
 
-portfolio.addEventListener('click', () => {
-  portfolioContent.scrollIntoView();
-})
+// portfolio.addEventListener('click', () => {
+//   portfolioContent.scrollIntoView();
+// })
 
-contact.addEventListener('click', () => {
-  contactContent.scrollIntoView();
-})
+// contact.addEventListener('click', () => {
+//   contactContent.scrollIntoView();
+// })
 
-function obCallBack(payload) {
-  if (!payload[0].isIntersecting) {
-    nav.style.position = "fixed";
-    nav.style.top = "0";
-  } else {
-    nav.style.position = "unset";
-  }
-}
+// function obCallBack(payload) {
+//   if (!payload[0].isIntersecting) {
+//     nav.style.position = "fixed";
+//     nav.style.top = "0";
+//   } else {
+//     nav.style.position = "unset";
+//   }
+// }
 
-const ob = new IntersectionObserver(obCallBack);
+// const ob = new IntersectionObserver(obCallBack);
 
-ob.observe(bottomBar);
+// ob.observe(bottomBar);
 
 function obAboutCallBack(payload) {
   const aboutBarHeight = payload[0].rootBounds.height;
   if (payload[0].isIntersecting) {  
+    sideBar.style.position = "unset";
+    testBackground.style.padding = "0";
     return;
   } else {
+    console.log('heyoo');
+    sideBar.style.position = "fixed";
+    sideBar.style.top = "0px";
+    testBackground.style.padding = "0 0 0 295px";
     let prevScrollPos = window.pageYOffset;
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset;
